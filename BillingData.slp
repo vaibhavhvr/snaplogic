@@ -1,0 +1,1847 @@
+{
+    "class_id": "com-snaplogic-pipeline",
+    "class_version": 9,
+    "link_map": {
+        "link102": {
+            "dst_id": "11111111-1111-1111-1111-000000000003",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000000",
+            "src_view_id": "output0"
+        },
+        "link104": {
+            "dst_id": "11111111-1111-1111-1111-000000000002",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000001",
+            "src_view_id": "output0"
+        },
+        "link105": {
+            "dst_id": "11111111-1111-1111-1111-000000000000",
+            "dst_view_id": "input0",
+            "src_id": "11111111-1111-1111-1111-000000000002",
+            "src_view_id": "output0"
+        }
+    },
+    "property_map": {
+        "error": {
+            "error_behavior": {
+                "value": "none"
+            }
+        },
+        "info": {
+            "author": {
+                "value": "vaibhav.kulkarni@genpact.com"
+            },
+            "label": {},
+            "notes": {
+                "value": null
+            },
+            "pipeline_doc_uri": {
+                "value": null
+            },
+            "purpose": {
+                "value": null
+            }
+        },
+        "input": {
+            "11111111-1111-1111-1111-000000000001_input0": {
+                "label": {
+                    "value": "JSON Parser - input0"
+                },
+                "view_type": {
+                    "value": "binary"
+                }
+            }
+        },
+        "output": {},
+        "settings": {
+            "error_param_table": {
+                "value": []
+            },
+            "error_pipeline": {
+                "expression": false,
+                "value": "Error Pipeline"
+            },
+            "imports": {
+                "value": []
+            },
+            "param_table": {
+                "value": [
+                    {
+                        "capture": {
+                            "value": true
+                        },
+                        "data_type": {
+                            "value": "string"
+                        },
+                        "description": {
+                            "value": null
+                        },
+                        "key": {
+                            "value": "CUSTOMHEADER"
+                        },
+                        "required": {
+                            "value": false
+                        },
+                        "value": {
+                            "value": null
+                        }
+                    },
+                    {
+                        "capture": {
+                            "value": true
+                        },
+                        "data_type": {
+                            "value": "string"
+                        },
+                        "description": {
+                            "value": null
+                        },
+                        "key": {
+                            "value": "filepath"
+                        },
+                        "required": {
+                            "value": false
+                        },
+                        "value": {
+                            "value": "wasbs:///rawadls/Success/"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "render_map": {
+        "default_snaplex": null,
+        "detail_map": {
+            "11111111-1111-1111-1111-000000000000": {
+                "error": {},
+                "grid_x_int": 4,
+                "grid_y_int": 2,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-000000000001": {
+                "error": {},
+                "grid_x_int": 2,
+                "grid_y_int": 2,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-000000000002": {
+                "error": {},
+                "grid_x_int": 3,
+                "grid_y_int": 2,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            },
+            "11111111-1111-1111-1111-000000000003": {
+                "error": {},
+                "grid_x_int": 5,
+                "grid_y_int": 2,
+                "index": null,
+                "input": {},
+                "output": {},
+                "recommendation_id": null,
+                "rot_int": 0,
+                "rot_tail_int": 0,
+                "source": ""
+            }
+        },
+        "pan_x_num": 0,
+        "pan_y_num": 0,
+        "scale_ratio": 1
+    },
+    "snap_map": {
+        "11111111-1111-1111-1111-000000000000": {
+            "class_id": "com-snaplogic-snaps-transform-jsonformatter",
+            "class_version": 2,
+            "instance_id": "11111111-1111-1111-1111-000000000000",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "binary"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "JSON Formatter"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "binary"
+                        }
+                    }
+                },
+                "settings": {
+                    "contentPath": {
+                        "value": "$"
+                    },
+                    "deriveSchemaLimit": {
+                        "value": "None"
+                    },
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "formatSingleDocument": {
+                        "value": false
+                    },
+                    "header": {
+                        "value": [
+                            {
+                                "expression": {
+                                    "expression": true,
+                                    "value": "Date.now()"
+                                },
+                                "targetPath": {
+                                    "value": "$Timestamp"
+                                }
+                            }
+                        ]
+                    },
+                    "ignoreEmptyStream": {
+                        "value": false
+                    },
+                    "jsonLines": {
+                        "value": false
+                    },
+                    "prettyPrint": {
+                        "value": true
+                    },
+                    "schema": {
+                        "expression": false,
+                        "value": null
+                    },
+                    "supportTypeExts": {
+                        "value": false
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000001": {
+            "class_id": "com-snaplogic-snaps-transform-jsonparser",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000001",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "JSON Parser"
+                    }
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "binary"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "allowNonStandardJson": {
+                        "value": true
+                    },
+                    "arrayElementsAsDocuments": {
+                        "value": true
+                    },
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "jsonFilterPath": {
+                        "value": ""
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000002": {
+            "class_id": "com-snaplogic-snaps-flow-datavalidator",
+            "class_version": 1,
+            "instance_id": "11111111-1111-1111-1111-000000000002",
+            "property_map": {
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Data Validator"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "output": {
+                    "output0": {
+                        "label": {
+                            "value": "output0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    }
+                },
+                "settings": {
+                    "constraintMappings": {
+                        "value": [
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INVOICE_LINE_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "number"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INVOICE_LINE_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INVOICE_LINE_NUMBER\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "number"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INVOICE_LINE_NUMBER\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].CUSTOMERNAME\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].CUSTOMERNAME\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INVENTORY_ITEM_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INVENTORY_ITEM_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].ITEMDESCRIPTION\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].ITEMDESCRIPTION\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INVOICE_DATE\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INVOICE_DATE\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INVOICE_PERIOD\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "number"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INVOICE_PERIOD\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INVOICE_STATUS\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INVOICE_STATUS\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INVOICE_HEADER_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "number"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INVOICE_HEADER_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INVOICE_NUMBER\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "number"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INVOICE_NUMBER\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].QTY_INVOICED\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "number"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].QTY_INVOICED\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].EXTENDED_LOCAL_AMOUNT\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "number"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].EXTENDED_LOCAL_AMOUNT\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INVOICEGROUPAMOUNT\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "number"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INVOICEGROUPAMOUNT\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INVOICECOUNTRY\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INVOICECOUNTRY\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].GROUPCURRENCY\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].GROUPCURRENCY\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].LEGALENTITY\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].LEGALENTITY\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].PAYTERMNAME\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].PAYTERMNAME\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].BSEGCREATION_DATE\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].BSEGCREATION_DATE\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].DUEDATE\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].DUEDATE\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].ENTITY\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].ENTITY\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].SHIPPED_DATE\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].SHIPPED_DATE\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].BILL_TO_CUSTOMER_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].BILL_TO_CUSTOMER_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].BILL_TO_SITE_USE_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].BILL_TO_SITE_USE_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INVOICE_TYPE_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INVOICE_TYPE_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].ORGANIZATION_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].ORGANIZATION_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].PRIMARY_SALESREP_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].PRIMARY_SALESREP_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].SET_OF_BOOKS_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].SET_OF_BOOKS_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].SHIP_TO_CUSTOMER_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].SHIP_TO_CUSTOMER_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].SHIP_TO_SITE_USE_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].SHIP_TO_SITE_USE_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].SOLD_TO_CUSTOMER_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].SOLD_TO_CUSTOMER_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].SOLD_TO_SITE_USE_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].SOLD_TO_SITE_USE_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].SALES_ORDER_LINE_NUMBER\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "number"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].SALES_ORDER_LINE_NUMBER\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].SALES_ORDER_NUMBER\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "number"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].SALES_ORDER_NUMBER\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INVOICE_LINE_TYPE\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INVOICE_LINE_TYPE\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].HEADER_REASON_CODE\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].HEADER_REASON_CODE\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].LOCAL_CURRENCY_CODE\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].LOCAL_CURRENCY_CODE\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].PAYMENT_TERMS_NAME\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].PAYMENT_TERMS_NAME\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].TERM_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].TERM_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].LINE_DESCRIPTION\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].LINE_DESCRIPTION\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INTERFACE_LINE_ATTRIBUTE_1\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INTERFACE_LINE_ATTRIBUTE_1\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INTERFACE_HEADER_ATTRIBUTE1\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "number"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INTERFACE_HEADER_ATTRIBUTE1\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INTERFACE_LINE_ATTRIBUTE_6\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INTERFACE_LINE_ATTRIBUTE_6\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].QTY_CREDITED\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "number"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].QTY_CREDITED\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].QTY_ORDERED\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "number"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].QTY_ORDERED\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].LINE_REVENUE_LOCAL_AMOUNT\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "number"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].LINE_REVENUE_LOCAL_AMOUNT\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].SALES_ORDER_DATE\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].SALES_ORDER_DATE\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].TAXABLE_AMOUNT\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "number"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].TAXABLE_AMOUNT\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].UNIT_LIST_LOCAL_AMOUNT\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "number"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].UNIT_LIST_LOCAL_AMOUNT\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].UNIT_LOCAL_AMOUNT\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "number"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].UNIT_LOCAL_AMOUNT\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].CODE_COMBINATION_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "number"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].CODE_COMBINATION_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].GL_DATE\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].GL_DATE\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].GL_POSTED_DATE\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].GL_POSTED_DATE\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INVOICE_LINE_GL_DIST_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "number"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].INVOICE_LINE_GL_DIST_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].REVENUE_BASE_AMOUNT\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "number"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].REVENUE_BASE_AMOUNT\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].DIST_REVENUE_LOCAL_AMOUNT\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "number"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].DIST_REVENUE_LOCAL_AMOUNT\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].PROFITCENTER\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].PROFITCENTER\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].COMPANYCODE\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].COMPANYCODE\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].COCOUNTRY\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].COCOUNTRY\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].SEGMENT\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].SEGMENT\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].AMOUNT_IN_DISPUTE\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "number"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].AMOUNT_IN_DISPUTE\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].SOURCE_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "number"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].SOURCE_ID\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Required"
+                                },
+                                "constraintValue": {
+                                    "value": "True"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].SOURCE_NAME\")"
+                                }
+                            },
+                            {
+                                "constraint": {
+                                    "value": "Type"
+                                },
+                                "constraintValue": {
+                                    "value": "string"
+                                },
+                                "sourcePath": {
+                                    "value": "jsonPath($, \"$Billingdata[*].SOURCE_NAME\")"
+                                }
+                            }
+                        ]
+                    },
+                    "execution_mode": {
+                        "value": "Validate & Execute"
+                    },
+                    "standardizeErrorOutput": {
+                        "value": false
+                    },
+                    "validateJsonPath": {
+                        "value": false
+                    }
+                },
+                "view_serial": 100
+            }
+        },
+        "11111111-1111-1111-1111-000000000003": {
+            "class_id": "com-snaplogic-snaps-binary-write",
+            "class_version": 3,
+            "instance_id": "11111111-1111-1111-1111-000000000003",
+            "property_map": {
+                "account": {
+                    "account_ref": {
+                        "value": {
+                            "label": {
+                                "expression": false,
+                                "label": "AccessKey Storage",
+                                "value": "AccessKey Storage"
+                            },
+                            "ref_class_id": {
+                                "value": "com-snaplogic-snaps-binary-binaryazureaccount"
+                            },
+                            "ref_id": {
+                                "expression": false,
+                                "value": null
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "error0": {
+                        "label": {
+                            "value": "error0"
+                        },
+                        "view_type": {
+                            "value": "document"
+                        }
+                    },
+                    "error_behavior": {
+                        "value": "fail"
+                    }
+                },
+                "info": {
+                    "label": {
+                        "value": "Write to ADLS"
+                    },
+                    "notes": {}
+                },
+                "input": {
+                    "input0": {
+                        "label": {
+                            "value": "input0"
+                        },
+                        "view_type": {
+                            "value": "binary"
+                        }
+                    }
+                },
+                "output": {},
+                "settings": {
+                    "UserPermissionsKey": {
+                        "value": []
+                    },
+                    "advancedProperties": {
+                        "value": []
+                    },
+                    "createDir": {
+                        "value": false
+                    },
+                    "executable_during_suggest": {
+                        "value": false
+                    },
+                    "execution_mode": {
+                        "value": "Execute only"
+                    },
+                    "fileAction": {
+                        "value": "OVERWRITE"
+                    },
+                    "filename": {
+                        "expression": true,
+                        "value": "_filepath + _CUSTOMHEADER + \"-\" + $Timestamp + \".json\""
+                    },
+                    "flushIntervalKb": {
+                        "value": -1
+                    },
+                    "retries": {
+                        "expression": false,
+                        "value": 0
+                    },
+                    "retryInterval": {
+                        "expression": false,
+                        "value": 1
+                    },
+                    "validate": {
+                        "value": false
+                    },
+                    "writeEmptyFile": {
+                        "value": false
+                    },
+                    "writeHeader": {
+                        "value": false
+                    }
+                },
+                "view_serial": 100
+            }
+        }
+    }
+}
