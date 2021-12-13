@@ -1834,7 +1834,7 @@
                         "value": false
                     },
                     "writeEmptyFile": {
-                        "value": true
+                        "value": false
                     },
                     "writeHeader": {
                         "value": false
