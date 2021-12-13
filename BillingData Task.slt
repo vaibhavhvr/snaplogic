@@ -1,0 +1,21 @@
+{
+    "job_class": "PipelineJob",
+    "job_name": "BillingData Task",
+    "note": "",
+    "parameters": {
+        "enabled": true,
+        "execution_timeout": 1,
+        "include_external_urls": true,
+        "job_type": "standard",
+        "llfeed_token": "CSuDs0Ad3Sgnzca84jpBonUY2deZ0Vrp",
+        "pipeline_parameters": {
+            "CUSTOMHEADER": null,
+            "filepath": "wasbs:///rawadls/Success/"
+        },
+        "pipeline_path": "BillingData",
+        "snaplex_path": "Cloudplex"
+    },
+    "schedule": {},
+    "trigger": {},
+    "trigger_type": "ScheduleTrigger"
+}
